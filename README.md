@@ -10,10 +10,11 @@ gcloud config set project <PROJECT>
 
 Reproducing these results:
 ```
+git clone https://github.com/pbrumblay/testfirestore
 python3 -m venv testfirestore
 source testfirestore/bin/activate
-git clone https://github.com/pbrumblay/testfirestore
 cd testfirestore
+pip install -r requirements.txt
 python load.py
 python test.py
 ```
